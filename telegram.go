@@ -83,6 +83,7 @@ func handlerTelegram(update tbotapi.Update, c *tbotapi.TelegramBotAPI) {
 		}
 		// Note: Bots cannot receive from channels, at least no text messages. So we don't have to distinguish anything here.
 		log.Info("From User: ", msg.Chat)
+		log.Info("From USer ID: ", msg.From.ID)
 		log.Info("Text: ", *msg.Text)
 
 		tmp := struct {
@@ -91,7 +92,7 @@ func handlerTelegram(update tbotapi.Update, c *tbotapi.TelegramBotAPI) {
 			FlexIDType dt.FlexIDType
 		}{
 			CMD:        *msg.Text,
-			FlexID:     *msg.From.Username,
+			FlexID:     string(msg.From.ID),
 			FlexIDType: 3,
 		}
 		byt, err := json.Marshal(tmp)
