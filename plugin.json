@@ -1,0 +1,7 @@
+{
+	"Name": "Telegram",
+	"Maintainer": "Ankit Bansal <ankitbansal82@gmail.com>",
+	"AbotVersion": 0.2,
+	"Description": "Enable your Abot to send and receive messages via Telegram.",
+	"Icon": "https://telegram.org/img/t_logo.png"
+}
