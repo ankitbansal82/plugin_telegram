@@ -1,5 +1,4 @@
-![Abot Telegram Plugin](https://telegram.org/img/t_logo.png)
-![Abot](http://i.imgur.com/WBACSyP.png)
+<img src="https://telegram.org/img/t_logo.png" width="95"> ![Abot](http://i.imgur.com/WBACSyP.png) 
 
 A plugin for [Abot](https://github.com/itsabot/abot) platform that integrates it with [Telegram bot api](https://core.telegram.org/bots)
 
